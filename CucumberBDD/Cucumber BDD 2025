@@ -1,0 +1,73 @@
+Learn Cucumber BDD with Java & Build Selenium Framework
+
+What is BDD?
+
+BDD is one of the development approach involves the usage of common language that enhances communication between
+various tech and non-tech teams. Tests are more user-focused and based on the system's behaviour.
+In BDD, "Given-When-Then" is the proposed approach for writing test cases.
+
+Given I am at landing page of Ecommerce application
+When I search for the product which does not exist
+Then No results message should be displayed
+
+What is Cucumber?
+Cucumber is a tool that supports BDD. It allows writing tests in a human-readable format using Gherkin syntax.
+
+Difference between Cucumber and Selenium:
+Cucumber: Cucumber helps to design framework for selenium automation tests written in BDD standard.
+Selenium: Selenium is the tool used for automating web applications.
+
+***************************************************************************************************************
+
+Understand Gherkin Syntax
+Understand Cucumber Scenarios
+Feature files & Step Definition files
+cucumber Test Runner (Junit & TestNg)
+Cucumber regular expressions
+Cucumber tags & Background keyword
+Cucumber Scenario outline for parameterization
+Cucumber Datatables
+Cucumber hooks
+Tagged Hooks mechanism
+Cucumber plugins
+cucumber reports
+Cucumber attributes
+Cucumber Parallel execution
+
+Build Maven Project with all the framework dependencies
+
+Develop End to end Selenium Web Scenarios in the feature file
+
+Implement TestNG /Junit Runner to run the framework
+
+Understand the Single responsibility principle to distribute the implementation into multiple Step definitions.
+
+Importance of Dependency injection to share the data between the Steps file
+
+Understand the Page object Pattern to drive the locators from page files
+
+Implement Factory Design pattern by writing PageObjectManager class to create objects of all PO classes
+
+How driver can be configured and distributed across the files in the framework
+
+How to run Cucumber Scenarios in Parallel Mode using Cucumber TestNG Runner
+
+Build Test utilities for reusable Selenium methods
+
+Implement Cucumber Hooks to capture Screenshots on test failures
+
+Implement Cucumber Tags to run selected tests in the framework
+
+Parameterizing the test data to run the Scenarios with multiple data sets
+
+Creating HTML & Extent reports to run Cucumber Selenium tests
+
+Running tests in parallel mode and generate Extent reports with screenshots attached for failed Scenarios
+
+Run the cucumber tests using Maven & Command line options
+
+Integrate the Framework to CI/CD Jenkins and Schedule the Jobs on regular time Interval
+
+Create Parameterized Jenkin job to dynamically send the global properties at run time of Job execution
+
+
