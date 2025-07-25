@@ -28,14 +28,15 @@ public class Test {
 
     }
 
+    /*
     @When("User login into application with username {string} and password {string}")
     public void user_login_into_application_with_username_and_password(String string, String string2) {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Username: " + string + ", Password: " + string2);
     }
-
-    @When(" User login into application with multiple {string} and {string} ")
-    public void user_login_into_application_with_multiple_username_username_and_password_password(String username, String password) {
+     */
+    @When("^User login into application with username (.+) and password (.+)$")
+    public void user_login_into_application_with_username_and_password(String username, String password) {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Username: " + username + ", Password: " + password);
     }
