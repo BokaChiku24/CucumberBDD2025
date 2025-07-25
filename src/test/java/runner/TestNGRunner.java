@@ -7,7 +7,8 @@ import io.cucumber.testng.CucumberOptions;
                  glue = "stepDefinitions",
                  monochrome = true,
                  plugin = {"pretty", "html:target/cucumber-reports.html"},
-                 tags = "@SmokeTest")
+                 // tags = "@SmokeTest"
+                 tags = "@SmokeTest and @Regression")
 public class TestNGRunner extends AbstractTestNGCucumberTests {
 
 }

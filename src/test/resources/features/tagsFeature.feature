@@ -53,6 +53,7 @@ Feature: Application Login
 
 # Data Driven Scenario
   @SmokeTest
+  @Regression
   Scenario: Signup to the application
     Given user is on practice landing page
     When User signup into application
