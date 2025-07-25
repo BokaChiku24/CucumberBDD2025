@@ -1,4 +1,11 @@
 Feature: Application Login
+
+# Cucumber Background - It applicable for all scenarios, scenario outline in the feature file
+  Background:
+    Given Setup the entries in database
+    When launch the browser from the config file
+    And hit the home page url of the bank application
+
 # Cucumber Scenario
   Scenario: Admin Page is the default login
     Given User is on the NetBanking landing page

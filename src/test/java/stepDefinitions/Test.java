@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -74,4 +75,23 @@ public class Test {
        System.out.println("Username and password page displayed");
     }
 
+    // Background Example
+    @Given ("Setup the entries in database")
+    public void setup_the_entries_in_database() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Setup the entries in database");
+    }
+
+    @When ("launch the browser from the config file")
+    public void launch_the_browser_from_the_config_file() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Launch the browser from the config file");
+    }
+
+    @And ("hit the home page url of the bank application")
+    public void hit_the_home_page_url_of_the_bank_application() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Hit the home page URL of the bank application");
+    }
+    
 }
