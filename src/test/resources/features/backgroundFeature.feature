@@ -7,6 +7,7 @@ Feature: Application Login
     And hit the home page url of the bank application
 
 # Cucumber Scenario
+  @SmokeTest @NetBanking
   Scenario: Admin Page is the default login
     Given User is on the NetBanking landing page
     When User login into application
@@ -14,6 +15,7 @@ Feature: Application Login
     And Cards are displayed
 
 # Cucumber Scenario with Code Reuse
+  @SmokeTest
   Scenario: User Page is the default login
     Given User is on the NetBanking landing page
     When User login into application with username "abctest" and password "admin123"
@@ -28,6 +30,7 @@ Feature: Application Login
     And Cards are displayed
 
 # Cucumber Scenario Outline
+  @SmokeTest
     Scenario Outline: Admin Page is the default login
         Given User is on the NetBanking landing page
         When User login into application with username "<username>" and password "<password>"
@@ -39,6 +42,7 @@ Feature: Application Login
         | user     | user123   |
 
 # Cucumber Regex Pattern Scenario Outline
+  @SmokeTest
   Scenario Outline: User Page is the default login
     Given User is on the NetBanking landing page
     When User login into application with username <username> and password "<password>"
@@ -50,6 +54,7 @@ Feature: Application Login
       | xyztest  | admin@123 |
 
 # Data Driven Scenario
+  @SmokeTest
   Scenario: Signup to the application
     Given user is on practice landing page
     When User signup into application
