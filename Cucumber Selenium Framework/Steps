@@ -1,0 +1,38 @@
+Cucumber Seleneium Framework from Scratch
+
+1. Build Maven project with all the framework dependencies
+   Develop End to End Selenium Web Scenarios in the Cucumber Framework feature file
+
+2. Implement TestNG/Junit Runner to run the framework
+
+3. Understand the Single responsibility principle to distribute the implementation into multiple step definitions
+
+4. Importance of Dependency injection to share the data between the step file
+
+5. Understand the Page Object Pattern to drive the locators from page files
+
+6. Implement Page factory Design Pattern by writting Page Object Manager class to create objects of all PO class
+
+7. How driver can be configured and distributed across the files in the framework
+
+8. How to run the framework in parallel mode using Cucumber TestNG runner
+
+9. Build test utility classes to handle the common functionality like reading data from excel,
+writing data to excel, reading data from properties file, writing data to properties file, handling screenshots,
+handling logs, etc.
+
+10. Implement cuucmber hook to capture the screenshots on failure and to handle the browser close/open functionality
+
+11. Implement cucumber tags to run the scenarios based on the tags
+
+12. Paramerterizing the test data to run the scenarios with different data sets
+
+13. Creating HTML and Extent reports to generate the test execution report
+
+14. Running test in parallel mode using TestNG and generate extent report of the screeenshots failure for each scenario
+
+15. Run the cucumber test using maven command and command line arguments
+
+16. Integrate the framework with CI/CD tools like Jenkins to automate the test execution and schedule the test runs
+
+17. Create parameterized Jenkins job to run the tests with different browser and environment configurations
