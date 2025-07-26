@@ -25,7 +25,7 @@ handling logs, etc.
 
 11. Implement cucumber tags to run the scenarios based on the tags
 
-12. Paramerterizing the test data to run the scenarios with different data sets
+12. Parameterizing the test data to run the scenarios with different data sets
 
 13. Creating HTML and Extent reports to generate the test execution report
 
