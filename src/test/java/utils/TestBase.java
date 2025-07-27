@@ -48,14 +48,11 @@ public class TestBase {
             throw new RuntimeException("Browser not supported: " + prop.getProperty("browser"));
         }
     }
-
-    /*
     public void closeBrowser() {
         if (driver != null) {
             driver.close();
             driver = null; // Set driver to null after closing to allow reinitialization
         }
     }
-     */
 
 }
