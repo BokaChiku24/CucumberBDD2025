@@ -6,7 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class OffersPage {
 
     public WebDriver driver;
-    public OffersPage(WebDriver driver){
+
+    public OffersPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -14,19 +15,19 @@ public class OffersPage {
     public By searchTextbox = By.cssSelector("input[type='search']");
     public By offerProduct = By.cssSelector("tbody tr td:nth-child(1)");
 
-    public void clickOnOfferLink(){
+    public void clickOnOfferLink() {
         driver.findElement(offerLink).click();
     }
 
-    public void clickSearchTextbox(){
+    public void clickSearchTextbox() {
         driver.findElement(searchTextbox).click();
     }
 
-    public void sendKeyToSearchBox(String string){
+    public void sendKeyToSearchBox(String string) {
         driver.findElement(searchTextbox).sendKeys(string);
     }
 
-    public String getOfferProductName(){
+    public String getOfferProductName() {
         return driver.findElement(offerProduct).getText();
     }
 

@@ -49,11 +49,13 @@ public class TestBase {
         }
     }
 
+    /*
     public void closeBrowser() {
         if (driver != null) {
-            driver.quit();
+            driver.close();
             driver = null; // Set driver to null after closing to allow reinitialization
         }
     }
+     */
 
 }

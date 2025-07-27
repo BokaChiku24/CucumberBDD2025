@@ -12,7 +12,7 @@ public class Hook {
 
     @After
     public void AfterScenario() {
-        testContextSetup.testBase.closeBrowser();
+        testContextSetup.driver.close();
         System.out.println("Browser closed and driver reset to null after scenario.");
     }
 }
