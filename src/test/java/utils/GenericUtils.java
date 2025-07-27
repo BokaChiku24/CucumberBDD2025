@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import java.util.Set;
 
-public class GenericUtils {
+public class GenericUtils extends TestBase {
 
     public WebDriver driver;
     public WebDriverWait wait;
@@ -23,7 +23,7 @@ public class GenericUtils {
 
     public void switchToChildWindow() {
         if (!Objects.requireNonNull(driver.getCurrentUrl()).
-                equalsIgnoreCase("https://rahulshettyacademy.com/seleniumPractise/#/offers")) {
+                equalsIgnoreCase(getProperties().getProperty("offerURL"))) {
             Set<String> windowHandles = driver.getWindowHandles();
             Iterator<String> itr = windowHandles.iterator();
             String parentWindow = itr.next();
