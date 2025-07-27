@@ -7,20 +7,17 @@ package utils;
  */
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.PageObjectManager;
 
 public class TestContextSetup {
 
     public WebDriver driver;
-    public WebDriverWait wait;
     public String landingProductName;
     public PageObjectManager pageObjectManager;
     public TestBase testBase;
     public GenericUtils genericUtils;
 
     public TestContextSetup() {
-        // Initialize the PageObjectManager with the WebDriver instance
         testBase = new TestBase();
         driver = testBase.WebdriverManager();
         pageObjectManager = new PageObjectManager(driver);

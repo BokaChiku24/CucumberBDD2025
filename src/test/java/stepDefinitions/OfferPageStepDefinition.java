@@ -15,7 +15,7 @@ public class OfferPageStepDefinition {
         this.testContextSetup = testContextSetup;
     }
 
-    @Then("user searched for {string} shortnmae in offer page")
+    @Then("^user searched for (.+) shortnmae in offer page$")
     public void user_searched_for_shortnmae_in_offer_page(String string) {
         // Write code here that turns the phrase above into concrete actions
         OffersPage offersPage = testContextSetup.pageObjectManager.getOfferPage();

@@ -26,7 +26,7 @@ public class LandingPageStepDefinition {
 
     }
 
-    @When("user searched with shortname {string} and extracted actual name of product")
+    @When("^user searched with shortname (.+) and extracted actual name of product$")
     public void user_searched_with_shortname_and_extracted_actual_name_of_product(String string) {
         // Write code here that turns the phrase above into concrete actions
         LandingPage landingPage = testContextSetup.pageObjectManager.getLandingPage();
