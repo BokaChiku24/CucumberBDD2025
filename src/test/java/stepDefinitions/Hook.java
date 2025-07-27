@@ -1,23 +1,18 @@
 package stepDefinitions;
 
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
+import utils.TestContextSetup;
 
 public class Hook {
+    public TestContextSetup testContextSetup;
 
-    // This class is used to define hooks that run before or after scenarios
-    // or scenario outlines in Cucumber tests.
-    // Before -> Background -> Scenario/Scenario Outline -> After
-
-    // backgroundFeature.feature
-    @Before("@NetBanking")
-    public void beforeSmokeTest() {
-        System.out.println("Executing before Smoke Test");
+    public Hook(TestContextSetup testContextSetup) {
+        this.testContextSetup = testContextSetup;
     }
 
     @After
-    public void tearDown() {
-        System.out.println("Clear the entries");
+    public void AfterScenario() {
+        testContextSetup.testBase.closeBrowser();
+        System.out.println("Browser closed and driver reset to null after scenario.");
     }
-
 }

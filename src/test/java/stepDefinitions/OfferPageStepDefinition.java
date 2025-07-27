@@ -34,6 +34,5 @@ public class OfferPageStepDefinition {
     public void validate_name_in_offer_page_matches_with_landing_pages() {
         // Write code here that turns the phrase above into concrete actions
         Assert.assertEquals(offerProductName, testContextSetup.landingProductName);
-        testContextSetup.testBase.closeBrowser();
     }
 }
