@@ -10,8 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.PageObjectManager;
 
-import java.time.Duration;
-
 public class TestContextSetup {
 
     public WebDriver driver;
@@ -19,12 +17,13 @@ public class TestContextSetup {
     public String landingProductName;
     public PageObjectManager pageObjectManager;
     public TestBase testBase;
+    public GenericUtils genericUtils;
 
     public TestContextSetup() {
         // Initialize the PageObjectManager with the WebDriver instance
         testBase = new TestBase();
         driver = testBase.WebdriverManager();
         pageObjectManager = new PageObjectManager(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        genericUtils = new GenericUtils(driver);
     }
 }

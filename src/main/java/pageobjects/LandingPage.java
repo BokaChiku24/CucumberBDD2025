@@ -11,7 +11,7 @@ public class LandingPage {
             this.driver = driver;
     }
 
-    By search = By.cssSelector("input.search-keyword");
+    public By search = By.cssSelector("input.search-keyword");
     By productName = By.cssSelector(".product h4");
 
     public void searchItem(String name){
